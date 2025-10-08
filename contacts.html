@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,25 +8,64 @@
 <body>
     <Header>
     <h1>Контакты</h1>
-    <img src=".jpg"
-        alt="()" width="300">
+    <img src="images/end.jpg"
+        alt="почти конец" width="300">
         <nav>
     <nav>
-           <a href="#"></a> <br>
-           <a href="#"></a> <br>
-           <a href="#"></a> <br>
-           <a href="#"> </a> <br>
-           <a href="#"> </a> <br>
-           <a href="#links">Навигация</a>
+           <a href="#form">Форма обратной связи</a> <br>
+           <a href="#connection">Список способов связи</a> <br>
+           <a href="#social">Социальные сети </a> <br>
+           <a href="#links">Карта</a>
         </nav>
     </Header>
 
     <main>
 
+    <section id="form">
+        <h2>Форма обратной связи</h2>
+    <form>
+  <div>
+    <label for="name">Ваше имя:</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label for="subject">Тема:</label>
+    <select id="subject" name="subject">
+      <option>Общий вопрос</option>
+      <option>Предложение о работе</option>
+      <option>Сотрудничество</option>
+    </select>
+  </div>
+  <div>
+    <label for="message">Сообщение:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+  </div>
+  <button type="submit">Отправить</button>
+</form>
+</section>
+        
+        <section id="connection">
+            <h2>Список способов связи</h2>
+            <ol>
+                <li>Номер телефона: +7 901-***-**-**</li>
+                <li>Почта: ***********@gmail.com</li>
+            </ol>
+        </section>
 
+        <section id="social">
+            <h2>Социальные сети</h2>
+            <ul>
+                <li>ВК:idsvytosluvik</li>
+                <li>Телега:@svytosluvik</li>
+            </ul>
+        </section>
 
         <section id="links">
-        <h2>Навигация</h2>
+        <h2>Карта</h2>
         <p><a href="index.html" target="_self">Домой</a></p>
         <p><a href="about.html" target="_self">О себе</a></p>
         <p><a href="hobbies.html" target="_self">Галерея</a></p>
